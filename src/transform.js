@@ -1,6 +1,7 @@
 function groupAdultsByAgeRange(arr) {
 
-    const result = arr.filter(obj => obj.age >= 18)
+    const result = arr
+        .filter(obj => obj.age >= 18)
         .reduce((acc, curr) => {
             const currRange = getTheRange(curr);
             if (!acc[currRange]) {
