@@ -10,6 +10,7 @@ function groupAdultsByAgeRange(arr) {
             acc[currRange].push(curr);
             return acc;
         }, {});
+
     return result;
 }
 
